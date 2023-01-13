@@ -1,0 +1,4 @@
+<ion-card *ngFor="let url of pages; let i = index">
+  <img alt="{{ i }}" src="{{ url }}" />
+</ion-card>
+<ion-button expand="full" (click)="back()">Finish</ion-button>

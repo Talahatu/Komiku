@@ -1,0 +1,11 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size="4" *ngFor="let name of listKategori">
+      <ion-card color="primary" (click)="searchByCategory(name[0])">
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">{{ name[1] }}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

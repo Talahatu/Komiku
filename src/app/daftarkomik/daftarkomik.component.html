@@ -1,0 +1,16 @@
+<!-- Card -->
+<ion-grid>
+  <ion-row>
+    <ion-col size="6" *ngFor="let komik of komikArr">
+      <ion-card (click)="detailkomik(komik.id)">
+        <img alt="{{ komik.judul }}" src="{{ komik.link_poster }}" />
+        <ion-card-header>
+          <ion-card-title>{{ komik.judul }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{ komik.sinopsis.slice(0, 80) }}...
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
